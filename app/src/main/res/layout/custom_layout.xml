@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/basecolor"
+        android:gravity="center_vertical">
+
+        <include layout="@layout/ease_commom_back_btn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="规则说明"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <com.maxsix.bingo.util.TextViewScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#a3e9a4"
+        android:id="@+id/justified_scroller">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="一般规则说明"
+                android:background="@color/red"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="1.客户一经在本公司开户或投注即被视为已接受这些协议与规则。
+2.客户有责任确保自己的账户及登入资料的保密性。以使用者帐号及密码进行的任何网上投注将被视为有效。
+3.如果怀疑自己的资料被盗用，应立即通知上级更改密码和资料。
+4.客户每次登陆 时都应该核对自己帐号的结算金额。如对结算金额有任何疑问，请在第一时间内通知上级。
+5.当你在下注之后，请等待下注后的提示信息。为了避免出现争议，你必须在下注之后检查“投注资料”。
+6.任何的投诉必须在开奖之前提出，本公司不会受理任何开奖之后的投诉。
+7.所有投注项目，公布赔率时出现的任何打字错误或非故意人为失误，本公司将保留改正错误和按正确赔率结算投注的权利。
+8.公布之所有赔率为浮动赔率，下注时请确认当前赔率及金额，下注确认后一概不能更改。开奖后的投注，将被视为无效。
+9.因根据不同的会员帐号所设置的投注金额范围有所不同，如投注金额超出设定范围，本公司有权取消其超出之投注金额。
+10.如本公司觉察会员投注状况异常时，有权取消其异常注单，会员不得有任何异议以及延迟交收。
+11.若本公司主机房遇天灾、停电或不可抗力之因素，致无法运作时，得中止所有未开奖之投注，在本公司中止下注前，会员之所有投注仍属有效，不得要求取消或延迟交收，以及不得有任何异议。
+12.倘若发生遭骇客入侵破坏行为或不可抗拒之灾害因素导致网站故障或资料损坏、资料丢失等情况，我们将以本公司线上交易之后备资料为最后处理依据；为了确保各方真实利益，请各会员交易后列印资料，本公司才接受投诉及处理。
+13.敬告有意与本公司博彩之客户，应注意您所在的国家或居住地可能规定网络博彩不合法，若此情况属实，本公司将不接受任何客户因违反当地博彩或赌博法令所引起之任何责任。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="特别号码"
+            android:background="@color/red"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textStyle="bold"
+            android:padding="6dip" />
+        <com.maxsix.bingo.util.JustifyTextView
+            android:text="香港六合彩公司当期开出的最后一号码为特别号码（或称特码）"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:lineSpacingMultiplier="1.1"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="特码大小"
+                android:background="@color/red"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="开出之特码大于或等于25为特码大，小于或等于24为特码小，49为和"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="特码单双"
+                android:background="@color/red"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="特码为偶数叫特双，为奇数叫特单，49为和"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="特码波色"
+                android:background="@color/red"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="指开出之特码所属的颜色"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <com.maxsix.bingo.util.JustifyTextView
+            android:text="红波包括： 01, 02, 07, 08, 12, 13, 18, 19, 23, 24, 29, 30, 34, 35, 40, 45, 46"
+            android:layout_width="match_parent"
+            android:textColor="@color/red"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:lineSpacingMultiplier="1.1"
+            />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="蓝波包括： 03, 04, 09, 10, 14, 15, 20, 25, 26, 31, 36, 37, 41, 42, 47, 48"
+                android:layout_width="match_parent"
+                android:textColor="#1d80b2"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="绿波包括： 05, 06, 11, 16, 17, 21, 22, 27, 28, 32, 33, 38, 39, 43, 44, 49"
+                android:layout_width="match_parent"
+                android:textColor="#498c13"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="正码"
+                android:background="@color/red"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="六合彩公司当期开出之前6个号码叫正码。第一时间出来的叫正码1，依次叫正码2、正码3……正码6，不以大小排序。
+总分大小：所有七个开奖号码的分数总和大于或等于175为总分大；分数总和小于或等于174为总分小。如开奖号码为01、07、15、29、38、46、24，分数总和是160，则总分小。总分单双：所有七个开奖号码的分数总和是单数叫(总分单) ，如分数总和是103、193；分数总和是双数叫(总分双)，如分数总和是108、160。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="正码1-6特"
+                android:background="@color/red"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="正1特、正2特、正3特、正4特、正5特、正6特:指下注的正码特与开出之正码其开奖顺序及开奖号码相同，视为中奖，如第一个正码开奖为13号，下注第一个正码特为13则视为中奖，其它号码视为不中奖。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="过关"
+                android:background="@color/red"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="当期开奖号码的正码，任选2-6个号码为一投注组合，其赔率为所选号码当时赔率的总乘积。投注组合所选号码必须全中才视为中奖。当开奖结果中某一号码为49时，其单双大小为和，赔率以1计算，波色为绿波。过关彩金最高赔额50万。如正1为49，正1红为不中奖，正1大或正1单为和局，正1绿为中绿波。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="半半波"
+                android:background="@color/red"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text=" 以特码色波和特码单双及特码大小等三种游戏为一个投注组合
+以特码色波和特码单双及特码大小等三种游戏为一个投注组合，当期特码开出符合投注组合，即视为中奖； 若当期特码开出49号，则视为和局；其余情形视为不中奖。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="一肖"
+                android:background="@color/red"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="指开出的7个开奖号码中含有投注所属生肖的一个或多个号码，即视为中奖，不论同生肖的号码出现一个或多个，派彩只派一次。
+鼠包括：09,21,33,45;
+牛包括：08,20,32,44;
+虎包括：07,19,31,43;
+兔包括：06,18,30,42;
+龙包括：05,17,29,41;
+蛇包括：04,16,28,40;
+马包括：03,15,27,39;
+羊包括：02,14,26,38;
+猴包括：01,13,25,37,49;
+鸡包括：12,24,36,48;
+狗包括：11,23,35,47;
+猪包括：10,22,34,46;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="特肖"
+                android:background="@color/red"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="指开出特码所属的生肖。
+鼠包括：09,21,33,45;
+牛包括：08,20,32,44;
+虎包括：07,19,31,43;
+兔包括：06,18,30,42;
+龙包括：05,17,29,41;
+蛇包括：04,16,28,40;
+马包括：03,15,27,39;
+羊包括：02,14,26,38;
+猴包括：01,13,25,37,49;
+鸡包括：12,24,36,48;
+狗包括：11,23,35,47;
+猪包括：10,22,34,46;"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="特码头尾"
+                android:background="@color/red"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="以特号的十位数为头，个位数为尾
+头计有 0头 , 1头 , 2头 , 3头 , 4头
+尾计有 0尾 , 1尾 , 2尾 , 3尾 , 4尾 , 5尾 , 6尾 , 7尾 , 8尾 , 9尾
+特号头尾：※ 若当期特号之头尾，落在下注头尾范围内，视为中奖 。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="五行"
+                android:background="@color/red"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="当期开奖号码中的特码，开出下注五行中所属任意1个号码视为中奖，其余情况视为不中奖。 五行顺序为 金→木→水→火→土 五行号码分布为固定不变。
+五行号码分布如下 :
+金 01 , 06 , 11 , 16 , 21 , 26 , 31 , 36 , 41 , 46
+木 02 , 07 , 12 , 17 , 22 , 27 , 32 , 37 , 42 , 47
+水 03 , 08 , 13 , 18 , 23 , 28 , 33 , 38 , 43 , 48
+火 04 , 09 , 14 , 19 , 24 , 29 , 34 , 39 , 44 , 49
+土 05 , 10 , 15 , 20 , 25 , 30 , 35 , 40 , 45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+        </LinearLayout>
+    </com.maxsix.bingo.util.TextViewScrollView>
+
+</LinearLayout>

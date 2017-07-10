@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/menu_presses"
+        android:gravity="center_vertical">
+
+        <include layout="@layout/ease_commom_back_btn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="规则说明"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <com.maxsix.bingo.util.TextViewScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/justified_scroller">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="北京赛车(PK10)说明"
+                android:background="#498c13"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="         该游戏的投注时间、开奖时间、开奖号码和期数与“北京（PK拾）”官方网站完全同步，北京时间（GMT+8）每天白天从上午09:02:30开到晚上23:57:30，每5分钟开一次奖，每天开奖179期。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1~10两面：指大、小、单、双"
+                android:background="#498c13"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="大、小：
+自冠军~第十名，开出之号码大于或等于6为大，开出之号码小于等于5为小
+单、双：
+自冠军~第十名，开出之号码为双数叫双，如4、8；开出之号码为单数的叫单，如5、9。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第一名~第十名车号"
+                android:background="#498c13"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="冠军~第十名车号：每一个车号为一投注组合，开奖结果“投注车号”对应所投名次视为中奖，其余情形视为不中奖。
+如冠军开出号码8，下注冠军为8者视为中奖，第五名开出是1，下注第五名为1者视为中奖，其余情形视为不中奖。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1~5龙虎"
+                android:background="#498c13"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="冠军龙/虎:
+“冠军”车号大于“第十名”车号视为龙中奖、反之小于视为虎中奖，其余情形视为不中奖。
+
+亚军龙/虎：
+“亚军”车号大于“第九名”车号视为龙中奖、反之小于视为虎中奖，其余情形视为不中奖。
+
+第三名龙/虎：
+“第三名”车号大于“第八名”车号视为龙中奖、反之小于视为虎中奖，其余情形视为不中奖。
+
+第四名龙/虎：
+“第四名”车号大于“第七名”车号视为龙中奖、反之小于视为虎中奖，其余情形视为不中奖。
+
+第五名龙/虎：
+“第五名”车号大于“第六名”车号视为龙中奖、反之小于视为虎中奖，其余情形视为不中奖。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="冠军车号+亚军车号=冠亚和值（为3~19)"
+                android:background="#498c13"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="开奖号码冠亚军车号分别为5、3，和值8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+        </LinearLayout>
+    </com.maxsix.bingo.util.TextViewScrollView>
+
+</LinearLayout>

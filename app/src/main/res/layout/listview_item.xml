@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:id="@+id/btn_Delete"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_delete"/>
+        <TextView
+            android:id="@+id/letteyName"
+            android:text="dddd"
+            android:layout_toRightOf="@+id/btn_Delete"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:textSize="15sp"
+            android:gravity="center"/>
+            <EditText
+                android:id="@+id/jine"
+                android:layout_width="120dip"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:padding="5dip"
+                android:textColorHint="#AAAAAA"
+                android:hint="请输入投注金额"
+                android:inputType="number"
+                android:textSize="12sp"/>
+    </RelativeLayout>
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1px" />
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff2f6"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/menu_presses"
+        android:gravity="center_vertical">
+
+        <include layout="@layout/ease_commom_back_btn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="客服充值"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <LinearLayout style="@style/PersonalMainLayoutStyle">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10sp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff3b3b3b"
+                android:textSize="15.0sp"
+                android:text="微信支付和支付宝支付正在维护中……，请您通过官方客服人工充值。"/>
+        </LinearLayout>
+        <View style="@style/PersonalLine" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff3b3b3b"
+                android:id="@+id/tv_txje"
+                android:textSize="15.0sp"
+                android:text="官方唯一客服微信号(24小时在线)："/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_txje"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_tximg"
+                android:textSize="30.0sp"
+                android:textColor="@color/black"
+                android:text="906336513"
+                />
+        </RelativeLayout>
+        <View style="@style/PersonalLine" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_canwithrawMoney"
+                android:layout_height="wrap_content"
+                android:text="微信添加客服为好友，然后转账给客服同时提供您的账户，待客服确认后5分钟内给您账户充值，期间有任何问题请通过微信咨询客服，给您带来不便，敬请理解。待微信支付和支付宝支付接口恢复后正常支付。"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg_green"
+            android:id="@+id/btnCopy"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="复制客服微信号"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

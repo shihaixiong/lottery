@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/sumll"
+            android:background="#f4f4f8"
+            android:layout_height="40dip">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_sumMoney"
+                android:drawableLeft="@drawable/ico_money"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="0.00"
+                android:drawablePadding="10dip"
+                android:textColor="@color/menu_presses"/>
+        </RelativeLayout>
+        <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+            android:id="@+id/swip"
+            android:layout_below="@+id/sumll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:direction="both">
+            <ListView
+                android:id="@+id/list_supplier_quote"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                ></ListView>
+
+            <TextView
+                android:id="@+id/nodata"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="没有数据啦！" />
+        </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:drawableLeft="@anim/loadingbar"
+                android:id="@+id/imgLoading"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="数据加载中……"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txt_noRecord"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/blackk1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="暂时没有记录哦，亲" />
+    </RelativeLayout>
+</FrameLayout>

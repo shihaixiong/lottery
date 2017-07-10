@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff2f6"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/menu_presses"
+        android:gravity="center_vertical">
+        <include layout="@layout/ease_commom_back_btn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activityTitle"
+            android:layout_centerInParent="true"
+            android:text="手机号绑定/修改"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <LinearLayout style="@style/PersonalMainLayoutStyle">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10sp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff3b3b3b"
+                android:textSize="15.0sp"
+                android:text="为了账户的资金安全以及用于身份证请绑定手机号,绑定手机后可以通过手机号登陆"/>
+        </LinearLayout>
+        <View style="@style/PersonalLine" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="48dp" >
+
+            <EditText
+                android:id="@+id/et_usertel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edittext_login"
+                android:hint="你的手机号码"
+                android:inputType="phone"
+                android:paddingLeft="90dp"
+                android:singleLine="true"
+                android:maxLength="11"
+                android:textColorHint="#DDDDDD"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/et_usertel"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24dp"
+                android:text="+86"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="48dp" >
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edittext_login"
+                android:hint="输入验证码"
+                android:inputType="phone"
+                android:paddingLeft="90dp"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColorHint="#DDDDDD"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/et_code"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="验证码"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn_send"
+                style="@style/txt_titleStyle1"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="发送验证码"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:background="@color/basecolor"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_unenable_green"
+            android:enabled="false"
+            android:textColor="@android:color/darker_gray"
+            android:id="@+id/btnModifyWXAccount"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="绑定/修改"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

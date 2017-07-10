@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/menu_presses"
+        android:gravity="center_vertical">
+
+        <include layout="@layout/ease_commom_back_btn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="规则说明"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <com.maxsix.bingo.util.TextViewScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/justified_scroller">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="江苏快3说明"
+                android:background="#498c13"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="原名：江苏福彩“快3”，该游戏的投注时间、开奖时间和开奖号码与“江苏快3”完全同步（官方网），北京时间（GMT+8）每天白天从上午08:30开到晚上22:10，每10分钟开一次奖，每天开奖82期。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="具体游戏规则"
+                android:background="#498c13"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="1. “小”三粒骰子之点数总和由4点至10点。
+                            \n2. “大”三粒骰子之点数总和由11点至17点。
+                            \n3. “点数”由4点至17点，三粒骰子平面点数之总和。
+                            \n4. “三同号”在一点至六点内，三粒骰子平面点数相同。
+                            \n5. “二不同号”任两粒骰子之平面点数。
+                            \n6. “二同号”选定两粒骰子之平面点数。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+        </LinearLayout>
+    </com.maxsix.bingo.util.TextViewScrollView>
+</LinearLayout>

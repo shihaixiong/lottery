@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/menu_presses"
+        android:gravity="center_vertical">
+
+        <include layout="@layout/ease_commom_back_btn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/barTitle"
+            android:text="近期开奖记录"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/swip"
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:direction="both">
+        <ListView
+            android:id="@+id/list_supplier_quote"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            ></ListView>
+
+        <TextView
+            android:id="@+id/nodata"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="没有数据啦！" />
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:drawableLeft="@anim/loadingbar"
+            android:id="@+id/imgLoading"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="数据加载中……"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

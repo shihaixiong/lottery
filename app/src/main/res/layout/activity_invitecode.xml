@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff2f6"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/menu_presses"
+        android:gravity="center_vertical">
+
+        <include layout="@layout/ease_commom_back_btn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activityTitle"
+            android:layout_centerInParent="true"
+            android:text="邀请码"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <LinearLayout style="@style/PersonalMainLayoutStyle">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10sp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff3b3b3b"
+                android:textSize="15.0sp"
+                android:text="邀请别人在平台注册时提供您的邀请码，他(她)将发展为您的下级客户，下级客户在平台所有消费您都会拥有不同彩种不同比例佣金"/>
+        </LinearLayout>
+        <View style="@style/PersonalLine" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff3b3b3b"
+                android:id="@+id/tv_infoTitle"
+                android:textSize="16.0sp"
+                android:text="邀请码："/>
+            <EditText
+                android:id="@+id/invitecode"
+                android:layout_toRightOf="@+id/tv_infoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:editable="false"
+                android:ems="10"
+                android:text=""
+                android:focusableInTouchMode="true"
+                android:padding="5.0dip"
+                android:textColor="#ff3b3b3b"
+                android:textSize="20.0sp">
+            </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/menu_presses"
+        android:gravity="center_vertical">
+
+        <include layout="@layout/ease_commom_back_btn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="规则说明"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <com.maxsix.bingo.util.TextViewScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/justified_scroller">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="广东快乐十分说明"
+                android:background="#498c13"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="每期广东快乐十分（开奖网）开奖球数共八粒。每粒球除了总和玩法，其它都有单独的投注页面。 广东快乐十分每天开84期，每期间隔10分钟。投注时间为8分钟，北京时间（GMT+8）每天白天从9：00开到晚上23：00。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第一球~第八球"
+                android:background="#498c13"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="指下注的每一球与开出之号码其开奖顺序及开奖号码相同，视为中奖，如第一球开出号码8，下注第一球为8者视为中奖， 第五球开出是12，下注第五球为12者视为中奖其余情形视为不中奖。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="两面"
+                android:background="#498c13"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="指单、双、大、小、尾大、 尾小、合数单双、总和单双大小、总和尾大尾小：
+\n1、单、双：自第一球至第八球，开出的号码 为双数叫双，如8、16，开出的号码为单数叫单，如19、5。
+\n2、大、小：自第一球至第八球，开出的号码 大于或等于11为大，开出的号码小于等于10为小。
+\n3、尾大、尾小：自第一球至第八球，开出号码的尾数 大于等于5为尾大，开出号码的尾数小于等于4为尾小。
+\n4、合数单双:开出的号码的个位和十位相加，所得数 字为单数的为合单，如05、12；所得数字为双数的为合双，如08、19。
+\n5、总和单双：所有8个开奖号码的数字总和相加的值是单数的为总和单，如数字总和值是31、51；所有8个开奖号码的数字总和相加的值 是双数为总和双，如数字总和是42、80；假如投注组合符合中奖结果，视为中奖，其余情形视为不中奖。
+\n6、总和大小：所有8个开奖号码的数字总和相加的值是85到132为总和大；所有8个开奖号码的数字总和相加的值是36到83为总和小； 所有8个开奖号码的数字总和值为84打和；如开奖号码为01、20、02、08、17、09、11，数值总和是68，则总和小。假如投注组合 符合中奖结果，视为中奖，其余情形视为不中奖，打和不计算结果。
+\n7、总尾大小：所有8个开奖号码的数 字总和值的个位数大于等于5为总尾大，小于等于4为总尾小；假如投注组合符合中奖结果，视为中奖，其余情形视为不中奖。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1~4龙虎"
+                android:background="#498c13"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textStyle="bold"
+                android:padding="6dip" />
+            <com.maxsix.bingo.util.JustifyTextView
+                android:text="第一球龙/虎：“第一球”号码大于“第八球”号码视为“龙”中奖、反之小于视为“虎”中奖，其余情形视为不中奖。
+\n第二球龙/虎：“第二球”号码大于“第七球”号码视为“龙”中奖、反之小于视为“虎”中奖，其余情形视为不中奖。
+\n第三球龙/虎：“第三球”号码大于“第六球”号码视为“龙”中奖、反之小于视为“虎”中奖，其余情形视为不中奖。
+\n第四球龙/虎：“第四球”号码大于“第五球”号码视为“龙”中奖、反之小于视为“虎”中奖，其余情形视为不中奖。
+"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.1"
+                />
+        </LinearLayout>
+    </com.maxsix.bingo.util.TextViewScrollView>
+</LinearLayout>
